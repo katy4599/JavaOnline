@@ -3,6 +3,7 @@ package com.fundamentals;
 import com.fundamentals.lessons.Lesson5;
 import com.fundamentals.exercises.*;
 import com.fundamentals.lessons.Lesson6;
+import com.fundamentals.lessons.Lesson7;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,11 +13,21 @@ public class Main {
         //House myHouse = new House();
         //lesson5Examples();
         //lesson5Exercises();
-        lesson6Examples();
-
+        //lesson6Examples();
+        //lesson6Exercises();
+        lesson7Examples();
     } // end main method
 
-
+    public static void lesson7Examples() {
+        Lesson7 myLesson7 = new Lesson7();
+        myLesson7.basicMath();
+        myLesson7.exampleModulus();
+        //myLesson7.addTwoNumber();
+        myLesson7.exampleAssignment1();
+        myLesson7.exampleAssignment2();
+        myLesson7.exampleIncrement();
+        myLesson7.exampleDecrement();
+    }
     public static void lesson6Examples() {
         Lesson6 myLesson6 = new Lesson6();
         myLesson6.exampleCharAt();
@@ -46,6 +57,14 @@ public class Main {
         myLesson5Exercises.showNumber();
         myLesson5Exercises.showConversions();
 
+    }
+
+    public static void lesson6Exercises() {
+        Lesson6Exercises myLesson6Exercises = new Lesson6Exercises();
+        String myStr1 = myLesson6Exercises.exampleLowercase();
+        System.out.println(myStr1);
+        myLesson6Exercises.exampleChar();
+        myLesson6Exercises.exampleBuilder();
     }
 
 } // end class
