@@ -23,7 +23,7 @@ public class Lesson7 {
         System.out.println(total);
     } //end method exampleModulus
 
-    //This method demonstrates the scanned utility
+    //This method demonstrates the scanner utility
     public void addTwoNumber() {
          int x,y,z;
          System.out.println("Enter two numbers to calculate their sum.");

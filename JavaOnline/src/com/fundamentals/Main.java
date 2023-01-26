@@ -1,9 +1,8 @@
 package com.fundamentals;
 
-import com.fundamentals.lessons.Lesson5;
+import com.fundamentals.lessons.*;
 import com.fundamentals.exercises.*;
-import com.fundamentals.lessons.Lesson6;
-import com.fundamentals.lessons.Lesson7;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -15,8 +14,23 @@ public class Main {
         //lesson5Exercises();
         //lesson6Examples();
         //lesson6Exercises();
-        lesson7Examples();
+        //lesson7Examples();
+        //lesson7Exercises();
+        lesson8Examples();
     } // end main method
+
+    public static void lesson8Examples() {
+        Lesson8 myLesson8 = new Lesson8();
+        myLesson8.basicIfExample(5,5);
+        myLesson8.basicIfElseExample(12,17);
+        myLesson8.basicIfElseChainExample(42);
+        myLesson8.basicIfAndOrExample(108);
+        myLesson8.basicSwitchExample(2);
+        myLesson8.basicWhileExample();
+        myLesson8.basicDoWhileExample();
+        myLesson8.basicForLoopExample();
+        myLesson8.basicBranchExample();
+    }
 
     public static void lesson7Examples() {
         Lesson7 myLesson7 = new Lesson7();
@@ -27,6 +41,12 @@ public class Main {
         myLesson7.exampleAssignment2();
         myLesson7.exampleIncrement();
         myLesson7.exampleDecrement();
+    }
+    public static void lesson7Exercises() {
+        Lesson7Exercises myLesson7Exercises = new Lesson7Exercises();
+        myLesson7Exercises.exerciseModulus(50);
+        myLesson7Exercises.exerciseDoubleData(45.658, 2.87);
+        myLesson7Exercises.exerciseMysteryMath();
     }
     public static void lesson6Examples() {
         Lesson6 myLesson6 = new Lesson6();
@@ -66,5 +86,7 @@ public class Main {
         myLesson6Exercises.exampleChar();
         myLesson6Exercises.exampleBuilder();
     }
+
+
 
 } // end class
