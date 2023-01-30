@@ -16,8 +16,25 @@ public class Main {
         //lesson6Exercises();
         //lesson7Examples();
         //lesson7Exercises();
-        lesson8Examples();
+        //lesson8Examples();
+        //lesson8Exercises();
+        lesson9Examples();
     } // end main method
+
+    public static void lesson9Examples() {
+        Lesson9 myLesson9 = new Lesson9();
+        myLesson9.basicIntArray();
+        myLesson9.basicTwoDimensionalArray();
+        myLesson9.basicThreeDimensionalArray();
+        myLesson9.basicJaggedArray();
+    }
+
+    public static void lesson8Exercises() {
+        Lesson8Exercises myLesson8Exercises = new Lesson8Exercises();
+        myLesson8Exercises.compareTwoStrings("Good Morning","Good Morning");
+        myLesson8Exercises.charSwitchStatement('E');
+        myLesson8Exercises.forLoopModulus();
+    }
 
     public static void lesson8Examples() {
         Lesson8 myLesson8 = new Lesson8();
