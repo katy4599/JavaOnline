@@ -18,8 +18,25 @@ public class Main {
         //lesson7Exercises();
         //lesson8Examples();
         //lesson8Exercises();
-        lesson9Examples();
+        //lesson9Examples();
+        //lesson9Exercises();
+        lesson10Examples();
     } // end main method
+
+    public static void lesson10Examples() {
+        Lesson10 myLesson10 = new Lesson10();
+        //myLesson10.myMethod(); //method is private
+        Lesson10Ext myExt = new Lesson10Ext();
+        //myLesson10.myDefaultMethod(); // Method is default, outside this package
+        myExt.methodFromOtherClass();
+        //myLesson10.myProtectedMethod(); // method is protected and is not subclassed and outside this package.
+    }
+
+    public static void lesson9Exercises() {
+        Lesson9Exercises myLesson9Exercises = new Lesson9Exercises();
+        myLesson9Exercises.iceCreamArray();
+        myLesson9Exercises.scores2019Chiefs();
+    }
 
     public static void lesson9Examples() {
         Lesson9 myLesson9 = new Lesson9();
