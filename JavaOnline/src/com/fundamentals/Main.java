@@ -20,8 +20,17 @@ public class Main {
         //lesson8Exercises();
         //lesson9Examples();
         //lesson9Exercises();
-        lesson10Examples();
+        //lesson10Examples();
+        lesson11Examples();
     } // end main method
+
+    public static void lesson11Examples() {
+       House myHouse = new House();
+       House myOtherHouse = new House("Red");
+       Dog myDog = new Dog();
+       Dog myOtherDog = new Dog("mutt");
+    }
+
 
     public static void lesson10Examples() {
         Lesson10 myLesson10 = new Lesson10();
