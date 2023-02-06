@@ -24,11 +24,14 @@ public class Main {
         lesson11Examples();
     } // end main method
 
+
     public static void lesson11Examples() {
        House myHouse = new House();
        House myOtherHouse = new House("Red");
        Dog myDog = new Dog();
        Dog myOtherDog = new Dog("mutt");
+       Television myTelevision = new Television(70, 400, 3, true);
+       myTelevision.turnOn();
     }
 
 

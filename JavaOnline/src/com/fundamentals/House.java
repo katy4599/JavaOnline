@@ -7,6 +7,7 @@ public class House {
     private String doorColor;
     private int windowSize;
 
+
     public House() {
         System.out.println("This is the default constructor.");
     }
