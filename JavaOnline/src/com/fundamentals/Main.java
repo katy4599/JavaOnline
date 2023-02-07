@@ -5,6 +5,18 @@ import com.fundamentals.exercises.*;
 
 
 public class Main {
+
+    public static int num = 0;
+
+    static {
+        System.out.println("Static block 1");
+        num = 42;
+    } // End static block
+
+    static {
+        System.out.println("Static block 2");
+        num = 52;
+    }
     public static void main(String[] args) {
 
         //System.out.println("Hello Java");
@@ -22,8 +34,26 @@ public class Main {
         //lesson9Exercises();
         //lesson10Examples();
         //lesson11Examples();
-        lesson13Examples();
+        //lesson13Examples();
+        lesson14Example();
     } // end main method
+
+
+    public static void lesson14Example() {
+        // Can not change value of a final
+        //Lesson14.MY_FIRST_FINAL = 10;
+
+        int total = Lesson14.MY_FIRST_FINAL * 35; //2145 * 35
+        System.out.println(total);
+
+        //Can change value of a non-final static
+        Lesson14.myFirstStatic = 98; //Originally was 25
+        System.out.println(Lesson14.myFirstStatic);
+
+        Lesson14.myFirstStaticMethod(10);
+
+        System.out.println("Block number was " +num);
+    }
 
     public static void lesson13Examples() {
         House myHouse = new House("blue");
