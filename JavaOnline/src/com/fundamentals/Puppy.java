@@ -7,6 +7,11 @@ public class Puppy extends Dog{
         System.out.println("Default condo constructor");
     }
 
+    public Puppy(String name, String breed, String sex, int age) {
+        super(breed,sex,age);
+        this.name = name;
+    }
+
     public void Puppy(String name) {
         this.name = name;
     }
@@ -21,6 +26,11 @@ public class Puppy extends Dog{
 
     public void sit() {
         System.out.println("The dog sat.");
+    }
+    @Override
+    public void dogShake(){
+        super.dogShake();
+        System.out.println("The puppy did a shake");
     }
 }
 

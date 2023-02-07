@@ -42,6 +42,14 @@ public class Dog {
         public void setAge(int age) {
             this.age = age;
         }
+
+        public void dogShake() {
+            System.out.println("The dog did a shake");
+        }
+
+        public void dogShake(String breed) {
+            System.out.println("The "+breed +" did a shake");
+        }
     }
 
 

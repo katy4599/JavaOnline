@@ -21,9 +21,25 @@ public class Main {
         //lesson9Examples();
         //lesson9Exercises();
         //lesson10Examples();
-        lesson11Examples();
+        //lesson11Examples();
+        lesson13Examples();
     } // end main method
 
+    public static void lesson13Examples() {
+        House myHouse = new House("blue");
+        Condo myCondo = new Condo("medium");
+        Dog myDog = new Dog();
+        Puppy myPuppy = new Puppy();
+        myHouse.doorOpenClose(myHouse.getDoorColor());
+        myCondo.doorOpenClose(myCondo.getDoorColor());
+        myDog.dogShake();
+        myDog.dogShake("husky");
+        myPuppy.dogShake();
+
+        House myNewHouse = new Condo();
+        myNewHouse.doorOpenClose();
+
+    }
 
     public static void lesson11Examples() {
        House myHouse = new House();

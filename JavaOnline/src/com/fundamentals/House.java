@@ -41,7 +41,13 @@ public class House {
     }
 
 
-    public void doorOpenClose() { }
+    public void doorOpenClose() {
+        System.out.println("My house door is closed");
+    }
+
+    public void doorOpenClose(String doorColor) {
+        System.out.println("The open door is "+doorColor);
+    }
 
     public String getDoorColor() {
         return doorColor;
