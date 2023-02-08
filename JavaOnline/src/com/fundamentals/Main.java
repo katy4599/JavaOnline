@@ -35,8 +35,24 @@ public class Main {
         //lesson10Examples();
         //lesson11Examples();
         //lesson13Examples();
-        lesson14Example();
+        //lesson14Example();
+        //lesson14Exercises();
+        lesson15Examples();
     } // end main method
+
+
+    public static void lesson15Examples() {
+        int[] myInt = {1,2,3,4};
+        Lesson15Base myBase = new Lesson15Sub(10,myInt,"turned off");
+        Lesson15Sub mySub = new Lesson15Sub(10,myInt,"turned one");
+        mySub.receiveCall();
+        mySub.takePicture();
+    }
+    public static void lesson14Exercises() {
+        Lesson14Exercises.ohmsLawV(25, 4);
+        Lesson14Exercises.ohmsLawR(100, 4);
+        Lesson14Exercises.ohmsLawI(100, 25);
+    }
 
 
     public static void lesson14Example() {
