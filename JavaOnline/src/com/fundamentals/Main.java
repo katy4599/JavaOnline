@@ -40,8 +40,22 @@ public class Main {
         //lesson15Examples();
         //lesson16Examples();
         //lesson16Exercises();
-        lesson17Examples();
+        //lesson17Examples();
+        //lesson17Exercises();
+        lesson18Examples();
     } // end main method
+
+    public static void lesson18Examples() {
+        Lesson18 myLesson18 = new Lesson18();
+        //myLesson18.exampleException();
+        myLesson18.myArrayException();
+    }
+
+    public static void mylesson17Exercises() {
+        Lesson17Exercises myLesson17Exercises = new Lesson17Exercises();
+        myLesson17Exercises.televisions();
+        myLesson17Exercises.houses();
+    }
 
     public static void lesson17Examples() {
         Lesson17 myLesson17 = new Lesson17();
