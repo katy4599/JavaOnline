@@ -15,6 +15,7 @@ public enum DaysOfTheWeek {
     }
 
     public void enumMethod() {
-        System.out.println("Method inside enum called");
+        System.out.println("Method inside enum called" +
+                "");
     }
 }

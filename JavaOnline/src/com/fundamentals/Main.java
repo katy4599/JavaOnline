@@ -38,8 +38,23 @@ public class Main {
         //lesson14Example();
         //lesson14Exercises();
         //lesson15Examples();
-        lesson16Examples();
+        //lesson16Examples();
+        //lesson16Exercises();
+        lesson17Examples();
     } // end main method
+
+    public static void lesson17Examples() {
+        Lesson17 myLesson17 = new Lesson17();
+        //myLesson17.exampleArrayList1();
+        //myLesson17.exampleArrayList2();
+        //myLesson17.exampleHashSet();
+        myLesson17.exampleHashMap();
+    }
+
+    public static void lesson16Exercises() {
+        Lesson16Exercises myLesson16Exercises = new Lesson16Exercises();
+        myLesson16Exercises.myFavoriteGenre(Lesson16Exercises.movieGenres.COMEDY);
+    }
 
     public static void lesson16Examples() {
         Lesson16 myLesson16 = new Lesson16();
