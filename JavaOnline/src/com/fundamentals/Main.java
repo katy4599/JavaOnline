@@ -37,16 +37,46 @@ public class Main {
         //lesson13Examples();
         //lesson14Example();
         //lesson14Exercises();
-        lesson15Examples();
+        //lesson15Examples();
+        lesson16Examples();
     } // end main method
 
+    public static void lesson16Examples() {
+        Lesson16 myLesson16 = new Lesson16();
+        myLesson16.showEnum();
+        myLesson16.myFavoriteFlavor(Lesson16.IceCreamFlavors.ROCKY_ROAD);
+
+        DaysOfTheWeek d1[] = DaysOfTheWeek.values();
+        for(DaysOfTheWeek day: d1) {
+            System.out.println(day +" at index "+day.ordinal());
+        }
+
+        DaysOfTheWeek d3 = DaysOfTheWeek.WED;
+        d3.enumMethod();
+
+        Lesson16Lab[] labs = Lesson16Lab.values();
+
+        for(Lesson16Lab lab : labs) {
+            System.out.println("Labrador Color: "+lab.name() + " registration code: "+
+                    lab.getAction());
+        }
+    }
 
     public static void lesson15Examples() {
         int[] myInt = {1,2,3,4};
+        int myWaterBirdCount = 12;
         Lesson15Base myBase = new Lesson15Sub(10,myInt,"turned off");
         Lesson15Sub mySub = new Lesson15Sub(10,myInt,"turned one");
         mySub.receiveCall();
         mySub.takePicture();
+        WaterBirds myWaterBirds = new Duck(12);
+        Duck myDuck = new Duck(12);
+        WaterBirds myOtherWaterBirds = new Goose(15);
+        Goose myGoose = new Goose(15);
+        myDuck.drinksWater();
+        myGoose.eatsFish();
+        myDuck.birdsFlyAway();
+        myGoose.birdsFlyAway();
     }
     public static void lesson14Exercises() {
         Lesson14Exercises.ohmsLawV(25, 4);
